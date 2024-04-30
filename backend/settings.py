@@ -55,8 +55,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5174' # testing frontend url
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1']
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000'
 ]
 
 ROOT_URLCONF = 'backend.urls'
